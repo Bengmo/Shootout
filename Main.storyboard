@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Papyrus.ttc">
+            <string>Papyrus</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Western_Duel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sand-1545316_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="2HB-eR-EaK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uR4-ML-wta">
+                                <rect key="frame" x="90" y="288" width="195" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                <state key="normal" title="Host Duel" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hostButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OII-Yj-3nE"/>
+                                    <segue destination="7I5-gb-O4y" kind="show" id="cNn-yn-Faz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="evy-4p-xMh">
+                                <rect key="frame" x="90" y="441" width="195" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                <state key="normal" title="Join Duel" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="joinButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzA-01-UaP"/>
+                                    <segue destination="7I5-gb-O4y" kind="show" id="i9i-Hh-60j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="a8D-bY-NGn">
+                                <rect key="frame" x="16" y="49" width="343" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="42"/>
+                                <state key="normal" title="Western Duel" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hostButton" destination="uR4-ML-wta" id="dGU-1o-s0O"/>
+                        <outlet property="joinButton" destination="evy-4p-xMh" id="zGK-oB-GZO"/>
+                        <outlet property="sandyBackGround" destination="2HB-eR-EaK" id="8zh-tp-ggd"/>
+                        <outlet property="westernDuelLabel" destination="a8D-bY-NGn" id="h8R-0a-XUZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="32.833583208395808"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="33e-Ia-9hc">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="7I5-gb-O4y" customClass="ViewController2" customModule="Western_Duel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcc-yo-G5X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXK-gZ-vXF">
+                                <rect key="frame" x="-2" y="0.0" width="377" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W7K-mk-2fR">
+                                <rect key="frame" x="16" y="58" width="343" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <state key="normal" title="Get Shirt Color" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IPa-yq-j02">
+                                <rect key="frame" x="144" y="514" width="85" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <state key="normal" title="Take Picture" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="7I5-gb-O4y" eventType="touchUpInside" id="oJI-uS-Ldr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-SL-HZW">
+                                <rect key="frame" x="148" y="583" width="76" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <state key="normal" title="Next" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="7I5-gb-O4y" eventType="touchUpInside" id="l08-3v-QaC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorTester" translatesAutoresizingMaskIntoConstraints="NO" id="1UI-WG-YuF">
+                                <rect key="frame" x="132" y="281" width="110" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="fCe-ub-zX1"/>
+                    </view>
+                    <connections>
+                        <outlet property="getShirtColor" destination="W7K-mk-2fR" id="U7Y-uC-Kup"/>
+                        <outlet property="nextButton" destination="eBZ-SL-HZW" id="eMS-Cz-QDj"/>
+                        <outlet property="seeImage" destination="wXK-gZ-vXF" id="QOL-Af-rHD"/>
+                        <outlet property="takePhotoButton" destination="IPa-yq-j02" id="c9F-k9-lf6"/>
+                        <outlet property="tester" destination="1UI-WG-YuF" id="8L1-U8-CxQ"/>
+                        <segue destination="4iW-0y-X5e" kind="show" identifier="next" id="aET-Xx-VxR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0R-xr-1fJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696.79999999999995" y="32.833583208395808"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="asl-9E-nd1">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="4iW-0y-X5e" customClass="ViewController3" customModule="Western_Duel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bD-A0-lg5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-kK-Jyn">
+                                <rect key="frame" x="122" y="334" width="131.5" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llo-X3-Fpv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <action selector="pressDown:" destination="4iW-0y-X5e" eventType="touchDown" id="5m0-8l-Oey"/>
+                                    <action selector="shot:" destination="4iW-0y-X5e" eventType="touchUpInside" id="B0s-uF-CSq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-TD-5oN">
+                                <rect key="frame" x="209" y="483" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="rightBottomButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="FvH-Bf-MGd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-eH-gn4">
+                                <rect key="frame" x="139" y="483" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="leftBottomButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="fcA-cv-mrz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2C-nH-IQq">
+                                <rect key="frame" x="139" y="447" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="leftTopButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="Js3-4w-aPs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-l2-hXS">
+                                <rect key="frame" x="174" y="502" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="middleBottomButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="VI5-hA-Scg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YXk-sd-7NV">
+                                <rect key="frame" x="75" y="283" width="225" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <state key="normal" title="Connect" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hostOrJoin:" destination="4iW-0y-X5e" eventType="touchUpInside" id="PHb-9n-Yhj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Holster phone and begin on vibrate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A48-eH-vlo">
+                                <rect key="frame" x="0.0" y="171" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHH-DY-Jpd">
+                                <rect key="frame" x="174" y="423" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="middleTopButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="loR-eH-pck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-gF-yfU">
+                                <rect key="frame" x="209" y="441" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="rightTopButton:" destination="4iW-0y-X5e" eventType="touchUpInside" id="O3T-km-Ibx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="X6e-JC-2vW"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XS4-In-30d" appends="YES" id="ncu-Yd-Hyu"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="gunView" destination="fG2-kK-Jyn" id="hLF-gq-xkz"/>
+                        <outlet property="holsterWeaponLabel" destination="A48-eH-vlo" id="dGb-aq-FbE"/>
+                        <outlet property="hostAndJoinButton" destination="YXk-sd-7NV" id="3LC-Og-5ZW"/>
+                        <outlet property="leftBottomBullet" destination="nF2-eH-gn4" id="fld-0w-EPN"/>
+                        <outlet property="leftTopBullet" destination="k2C-nH-IQq" id="Yxd-HB-Ct4"/>
+                        <outlet property="middleBottomBullet" destination="MzJ-l2-hXS" id="CdV-1V-Vi4"/>
+                        <outlet property="middleTopBullet" destination="gHH-DY-Jpd" id="4bI-9H-OJu"/>
+                        <outlet property="rightBottomBullet" destination="oqP-TD-5oN" id="hLg-hm-Eho"/>
+                        <outlet property="rightTopBullet" destination="Vjw-gF-yfU" id="HYj-OW-RR9"/>
+                        <outlet property="shootButton" destination="llo-X3-Fpv" id="r2A-Va-yc1"/>
+                        <outlet property="testerer" destination="llo-X3-Fpv" id="1q0-qk-8Ne"/>
+                        <segue destination="h9S-Yh-xph" kind="showDetail" identifier="you lose" action="showViewController:sender:" id="P2R-Ye-Ubl"/>
+                        <segue destination="qhe-UM-kl5" kind="showDetail" identifier="you win" id="vTo-Kq-yf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nl-I9-q9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="down" id="XS4-In-30d">
+                    <connections>
+                        <action selector="downSwipe:" destination="4iW-0y-X5e" id="KQD-Df-c4d"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1551" y="33"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="4HS-8S-yoI">
+            <objects>
+                <viewController id="h9S-Yh-xph" customClass="ViewController4" customModule="Western_Duel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mS1-3q-xsM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sand-1545316_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="bWV-MV-9yV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DHg-DP-ZZb">
+                                <rect key="frame" x="94" y="278" width="187.5" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                <state key="normal" title="Rematch" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4iW-0y-X5e" kind="show" id="SgS-AV-hCK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TeU-uP-ZD3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="42"/>
+                                <state key="normal" title="You Win!" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA6-Fk-Rwi">
+                                <rect key="frame" x="141" y="590" width="93" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="brownHouse2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="WQ3-kv-0Y2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KxG-jr-knP"/>
+                    </view>
+                    <connections>
+                        <outlet property="restartButton" destination="DHg-DP-ZZb" id="HN1-la-DCG"/>
+                        <outlet property="sandBackground" destination="bWV-MV-9yV" id="mYj-L5-iEl"/>
+                        <outlet property="youWinLabel" destination="TeU-uP-ZD3" id="lIB-l1-Uih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCY-YP-lyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.8000000000002" y="32.833583208395808"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="rrl-sc-MYc">
+            <objects>
+                <viewController id="qhe-UM-kl5" customClass="ViewController5" customModule="Western_Duel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Hk-e3-dsx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sand-1545316_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="pAT-fd-INz">
+                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o06-9m-RIq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="42"/>
+                                <state key="normal" title="You Lose!" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-bU-QTa">
+                                <rect key="frame" x="94.5" y="278" width="187.5" height="111"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                <state key="normal" title="Rematch" backgroundImage="wood-601830_960_720">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4iW-0y-X5e" kind="showDetail" id="lsA-Cc-Q3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUk-mN-MSk">
+                                <rect key="frame" x="133" y="584" width="109" height="82.5"/>
+                                <state key="normal" title="Button" image="brownHouse2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="fGA-Vb-yII"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GUk-mN-MSk" firstAttribute="width" secondItem="1Hk-e3-dsx" secondAttribute="width" multiplier="0.15" constant="52.75" id="9Rz-UY-7dR"/>
+                            <constraint firstItem="X5V-bU-QTa" firstAttribute="height" secondItem="1Hk-e3-dsx" secondAttribute="height" multiplier="0.166667" id="AOd-ZP-ze3"/>
+                            <constraint firstItem="X5V-bU-QTa" firstAttribute="centerX" secondItem="1Hk-e3-dsx" secondAttribute="centerX" id="FOT-Sx-hIG"/>
+                            <constraint firstItem="X5V-bU-QTa" firstAttribute="centerY" secondItem="1Hk-e3-dsx" secondAttribute="centerY" id="GFq-3h-j5X"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="centerX" secondItem="1Hk-e3-dsx" secondAttribute="centerX" id="Kbd-36-G6Z"/>
+                            <constraint firstItem="pAT-fd-INz" firstAttribute="top" secondItem="1Hk-e3-dsx" secondAttribute="top" id="KfV-Dj-xqb"/>
+                            <constraint firstItem="GUk-mN-MSk" firstAttribute="centerX" secondItem="1Hk-e3-dsx" secondAttribute="centerX" id="O3F-iw-DiZ"/>
+                            <constraint firstItem="pAT-fd-INz" firstAttribute="trailing" secondItem="Ram-yT-8fU" secondAttribute="trailing" id="Y8m-dr-Vwc"/>
+                            <constraint firstItem="X5V-bU-QTa" firstAttribute="width" secondItem="1Hk-e3-dsx" secondAttribute="width" multiplier="0.5" id="ZY4-cj-wwA"/>
+                            <constraint firstItem="pAT-fd-INz" firstAttribute="bottom" secondItem="Ram-yT-8fU" secondAttribute="bottom" id="fQa-Ol-Uwf"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="leading" secondItem="Ram-yT-8fU" secondAttribute="leading" id="fQl-iH-P7c"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="width" secondItem="1Hk-e3-dsx" secondAttribute="width" id="g0J-5r-aLC"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="height" secondItem="1Hk-e3-dsx" secondAttribute="height" multiplier="0.25" id="h3j-Wj-Ar0"/>
+                            <constraint firstItem="pAT-fd-INz" firstAttribute="leading" secondItem="Ram-yT-8fU" secondAttribute="leading" id="hxi-QP-tJg"/>
+                            <constraint firstItem="Ram-yT-8fU" firstAttribute="bottom" secondItem="GUk-mN-MSk" secondAttribute="bottom" id="jMC-0d-FaV"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="top" secondItem="1Hk-e3-dsx" secondAttribute="top" id="kL5-ZQ-hvf"/>
+                            <constraint firstItem="GUk-mN-MSk" firstAttribute="height" secondItem="1Hk-e3-dsx" secondAttribute="height" multiplier="0.12" constant="2.6400000000000001" id="laY-Za-Dif"/>
+                            <constraint firstItem="o06-9m-RIq" firstAttribute="trailing" secondItem="Ram-yT-8fU" secondAttribute="trailing" id="yUJ-ZE-njj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ram-yT-8fU"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="X5V-bU-QTa" id="QWe-lH-qoh"/>
+                        <outlet property="sandBackground" destination="pAT-fd-INz" id="krr-n0-itC"/>
+                        <outlet property="youWinLabel" destination="o06-9m-RIq" id="dYb-V6-jde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8it-vb-0Vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286" y="780"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ColorTester" width="100" height="100"/>
+        <image name="brownHouse2" width="510" height="510"/>
+        <image name="sand-1545316_960_720" width="400" height="360"/>
+        <image name="wood-601830_960_720" width="480" height="240"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aET-Xx-VxR"/>
+        <segue reference="cNn-yn-Faz"/>
+        <segue reference="fGA-Vb-yII"/>
+    </inferredMetricsTieBreakers>
+</document>
